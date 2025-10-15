@@ -11,5 +11,14 @@ public class Main {
 
         harryPotterPart1.setYear(1997);
 
+        System.out.println("Название книги: " + harryPotterPart1.getTitle() +
+                ", автор: " + harryPotterPart1.getFirstName()+ ", " +
+                harryPotterPart1.getLastName() +
+                ", год выхода " + harryPotterPart1.getYear());
+
+        System.out.println("Название книги: " + atlasShrugged.getTitle() +
+                ", автор: " + atlasShrugged.getFirstName()+ ", " +
+                atlasShrugged.getLastName() +
+                ", год выхода " + atlasShrugged.getYear());
     }
 }
