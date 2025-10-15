@@ -3,5 +3,22 @@
 public class Main {
     public static void main(String[] args) {
 
+        Author jr = new Author("Joanne", "Rowling");
+        Author ar = new Author("Ayn", "Rand");
+
+        Book harryPotterPart1 = new Book("Harry Potter", jr, 1996);
+        Book atlasShrugged = new Book("atlasShrugged", ar, 1957);
+
+        harryPotterPart1.setYear(1997);
+
+        System.out.println("Название книги: " + harryPotterPart1.getTitle() +
+                ", автор: " + harryPotterPart1.getFirstName()+ ", " +
+                harryPotterPart1.getLastName() +
+                ", год выхода " + harryPotterPart1.getYear());
+
+        System.out.println("Название книги: " + atlasShrugged.getTitle() +
+                ", автор: " + atlasShrugged.getFirstName()+ ", " +
+                atlasShrugged.getLastName() +
+                ", год выхода " + atlasShrugged.getYear());
     }
 }
